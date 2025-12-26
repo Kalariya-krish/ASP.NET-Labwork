@@ -23,5 +23,26 @@ namespace ASP.NET_Labwork
             ans.Text =res.ToString();
 
         }
+
+        protected void upload_btn_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+                string fileName = FileUpload1.FileName;
+                string fileType = FileUpload1.PostedFile.ContentType;
+                int fileSize = FileUpload1.PostedFile.ContentLength; // in bytes
+                string fileExtension = System.IO.Path.GetExtension(fileName);
+
+                lblFileDetails.Text =
+                    "File Name: " + fileName + "<br/>" +
+                    "File Type: " + fileType + "<br/>" +
+                    "File Extension: " + fileExtension + "<br/>" +
+                    "File Size: " + (fileSize / 1024) + " KB";
+            }
+            else
+            {
+                lblFileDetails.Text = "Please select a file first.";
+            }
+        }
     }
 }

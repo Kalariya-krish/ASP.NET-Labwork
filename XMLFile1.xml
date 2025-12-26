@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+	<Ad>
+		<ImageUrl>Images\first_image.png</ImageUrl>
+		<NavigateUrl>https://www.ajio.com</NavigateUrl>
+		<Impresssion>5</Impresssion>
+		<Keywords></Keywords>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>Images\second_image.png</ImageUrl>
+		<NavigateUrl>https://www.ajio.com</NavigateUrl>
+		<Impresssion>6</Impresssion>
+		<Keywords></Keywords>
+	</Ad>
+</Advertisements>
+
