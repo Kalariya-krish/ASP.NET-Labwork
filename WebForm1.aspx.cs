@@ -16,12 +16,11 @@ namespace ASP.NET_Labwork
 
         protected void btn_Click(object sender, EventArgs e)
         {
-            int number1 = Convert.ToInt32(no1.Text);
-            int number2 = Convert.ToInt32(no2.Text);
+            //int number1 = Convert.ToInt32(no1.Text);
+            //int number2 = Convert.ToInt32(no2.Text);
 
-            int res = number1 + number2;
-            ans.Text =res.ToString();
-
+            //int ans = number1 + number2;
+            //res.Text = ans.ToString();
         }
 
         protected void upload_btn_Click(object sender, EventArgs e)
@@ -42,6 +41,29 @@ namespace ASP.NET_Labwork
             else
             {
                 lblFileDetails.Text = "Please select a file first.";
+            }
+        }
+
+        protected void btnView1_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
+
+        protected void btnView2_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int num;
+            if(int.TryParse(args.Value, out num) && num % 2 == 0)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = false;
             }
         }
     }

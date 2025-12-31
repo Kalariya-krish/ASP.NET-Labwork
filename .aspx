@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoanApplicationForm.aspx.cs" Inherits="ASP.NET_Labwork.LoanApplicationForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind=".aspx.cs" Inherits="ASP.NET_Labwork.LoanApplicationForm" %>
 
 <!DOCTYPE html>
 

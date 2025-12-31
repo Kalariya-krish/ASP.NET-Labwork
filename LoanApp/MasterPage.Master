@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="MasterPage.master.cs"
+    Inherits="ASP.NET_Labwork.LoanApp.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>HDFC Loan System</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .content {
+            min-height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <table>
+            <tr>
+                <td colspan="5">
+                    <h2>HDFC Loans - Next Step to Dream !</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <asp:Label ID="loginUserEmail" runat="server"
+                        Text="Logged In : UserEmail"></asp:Label>
+                </td>
+                <td>
+                    <asp:Button ID="logout_btn" runat="server"
+                        Text="LogOut"
+                        OnClick="logout_btn_Click" />
+                </td>
+            </tr>
+
+            <tr class="menu">
+                <td><asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click">Home</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbNewApplication" runat="server" OnClick="lbNewApplication_Click">New Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbUpdateApplication" runat="server" OnClick="lbUpdateApplication_Click">Update Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbRemoveApplication" runat="server" OnClick="lbRemoveApplication_Click">Remove Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbViewAll" runat="server" OnClick="lbViewAll_Click">View All</asp:LinkButton></td>
+            </tr>
+
+            <tr>
+                <td colspan="5" class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    <h3>Contact Us</h3>
+                    <p>HDFC Loans System</p>
+                    <p>Mumbai, Maharashtra, India</p>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

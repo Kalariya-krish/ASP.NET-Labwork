@@ -68,11 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="HomePage.aspx" />
     <Content Include="Images\first_image.png" />
     <Content Include="Images\second_image.png" />
-    <Content Include="LoanApplicationForm.aspx" />
-    <Content Include="LoginForm.aspx" />
+    <Content Include=".aspx" />
+    <Content Include="LoanApp\DiscardApplicationPage.aspx" />
+    <Content Include="LoanApp\HomePage.aspx" />
+    <Content Include="LoanApp\LoginForm.aspx" />
+    <Content Include="LoanApp\NewApplicationPage.aspx" />
+    <Content Include="LoanApp\UpdateApplicationPage.aspx" />
+    <Content Include="LoanApp\ViewAllPage.aspx" />
+    <Content Include="Tutorial-1\TUT1_Q1.aspx" />
+    <Content Include="Tutorial-1\TUT1_Q2.aspx" />
+    <Content Include="Tutorial-1\TUT1_Q3.aspx" />
+    <Content Include="Tutorial-1\TUT1_Q4.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XMLFile1.xml" />
@@ -81,28 +89,91 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.aspx.cs">
+    <Compile Include=".aspx.cs">
+      <DependentUpon>.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include=".aspx.designer.cs">
+      <DependentUpon>.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\DiscardApplicationPage.aspx.cs">
+      <DependentUpon>DiscardApplicationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanApp\DiscardApplicationPage.aspx.designer.cs">
+      <DependentUpon>DiscardApplicationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
+    <Compile Include="LoanApp\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoanApplicationForm.aspx.cs">
-      <DependentUpon>LoanApplicationForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoanApplicationForm.aspx.designer.cs">
-      <DependentUpon>LoanApplicationForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.aspx.cs">
+    <Compile Include="LoanApp\LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginForm.aspx.designer.cs">
+    <Compile Include="LoanApp\LoginForm.aspx.designer.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanApp\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\NewApplicationPage.aspx.cs">
+      <DependentUpon>NewApplicationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanApp\NewApplicationPage.aspx.designer.cs">
+      <DependentUpon>NewApplicationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\UpdateApplicationPage.aspx.cs">
+      <DependentUpon>UpdateApplicationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanApp\UpdateApplicationPage.aspx.designer.cs">
+      <DependentUpon>UpdateApplicationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApp\ViewAllPage.aspx.cs">
+      <DependentUpon>ViewAllPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanApp\ViewAllPage.aspx.designer.cs">
+      <DependentUpon>ViewAllPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tutorial-1\TUT1_Q1.aspx.cs">
+      <DependentUpon>TUT1_Q1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q1.aspx.designer.cs">
+      <DependentUpon>TUT1_Q1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q2.aspx.cs">
+      <DependentUpon>TUT1_Q2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q2.aspx.designer.cs">
+      <DependentUpon>TUT1_Q2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q3.aspx.cs">
+      <DependentUpon>TUT1_Q3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q3.aspx.designer.cs">
+      <DependentUpon>TUT1_Q3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q4.aspx.cs">
+      <DependentUpon>TUT1_Q4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutorial-1\TUT1_Q4.aspx.designer.cs">
+      <DependentUpon>TUT1_Q4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +183,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LoanApp\MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
