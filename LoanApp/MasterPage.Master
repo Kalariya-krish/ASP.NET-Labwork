@@ -62,12 +62,14 @@
             </tr>
 
             <tr class="menu">
-                <td><asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click">Home</asp:LinkButton></td>
-                <td><asp:LinkButton ID="lbNewApplication" runat="server" OnClick="lbNewApplication_Click">New Application</asp:LinkButton></td>
-                <td><asp:LinkButton ID="lbUpdateApplication" runat="server" OnClick="lbUpdateApplication_Click">Update Application</asp:LinkButton></td>
-                <td><asp:LinkButton ID="lbRemoveApplication" runat="server" OnClick="lbRemoveApplication_Click">Remove Application</asp:LinkButton></td>
-                <td><asp:LinkButton ID="lbViewAll" runat="server" OnClick="lbViewAll_Click">View All</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click" CausesValidation="false">Home</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbNewApplication" runat="server" OnClick="lbNewApplication_Click" CausesValidation="false">New Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbUpdateApplication" runat="server" OnClick="lbUpdateApplication_Click" CausesValidation="false">Update Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbRemoveApplication" runat="server" OnClick="lbRemoveApplication_Click" CausesValidation="false">Remove Application</asp:LinkButton></td>
+                <td><asp:LinkButton ID="lbViewAll" runat="server" OnClick="lbViewAll_Click" CausesValidation="false">View All</asp:LinkButton></td>
             </tr>
+
+
 
             <tr>
                 <td colspan="5" class="content">
